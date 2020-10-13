@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.First_Fragment">
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="8dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_nim"
+                android:layout_marginTop="20dp"
+                android:text="NIM"
+                android:textColor="@color/colorAccent"
+                android:textSize="16dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_nim"
+                android:layout_marginTop="5dp"
+                android:hint="Masukan Nim"
+                android:inputType="number"
+                android:maxLength="9"
+                android:textColor="@color/colorPrimaryDark"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_errorNim"
+                android:hint="Wajib di isi"
+                android:textColorHint="#FF0000"
+                android:textSize="10dp"
+                android:layout_marginLeft="6dp"
+                android:gravity="left"
+                android:visibility="gone"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_nama"
+                android:text="Nama"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/colorAccent"
+                android:textSize="16dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_nama"
+                android:layout_marginTop="5dp"
+                android:hint="Masukan Nama"
+                android:textColor="@color/colorPrimaryDark"
+                android:inputType="textCapCharacters"
+                android:maxLength="30"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_errorNama"
+                android:hint="Wajib di isi"
+                android:textColorHint="#FF0000"
+                android:textSize="10dp"
+                android:layout_marginLeft="6dp"
+                android:gravity="left"
+                android:visibility="gone"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tempat Tanggal Lahir"
+                android:textSize="16dp"
+                android:textColor="@color/colorAccent"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:gravity="center">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/et_tempat"
+                        android:hint="Tempat"
+                        android:inputType="textCapCharacters"
+                        android:textColor="@color/colorPrimaryDark"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:gravity="center">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/et_tanggal"
+                        android:clickable="false"
+                        android:drawableRight="@drawable/ic_baseline_date_range_24"
+                        android:focusable="false"
+                        android:hint="DD-MM-YYYY"/>
+                </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tv_errorTempat"
+                            android:layout_marginLeft="6dp"
+                            android:hint="Wajib diisi"
+                            android:textColorHint="#FF0000"
+                            android:textSize="10dp"
+                            android:visibility="gone"/>
+
+                    </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/tv_errorTanggal"
+                                android:layout_marginLeft="6dp"
+                                android:hint="Wajib diisi"
+                                android:textColorHint="#FF0000"
+                                android:textSize="10dp"
+                                android:visibility="gone"/>
+                        </LinearLayout>
+
+                </LinearLayout>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_masuk"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="50dp"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Masuk"
+                    android:textSize="15dp"/>
+
+
+            </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
